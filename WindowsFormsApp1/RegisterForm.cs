@@ -116,6 +116,11 @@ namespace WindowsFormsApp1
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registered Successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  
+                    //Switching  form  to login form 
+                    LoginPage loginForm1 = new LoginPage();
+                    loginForm1.Show();
+                    this.Hide();   
                 }
             }
             catch (Exception ex)
