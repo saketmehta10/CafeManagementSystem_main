@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using System.Data;
 
 namespace WindowsFormsApp1
-{
+{  //updated 
     public partial class RegisterForm : Form
     {   //Creating a Reference  to Database  
         SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=""New Database"";Integrated Security=True;");
