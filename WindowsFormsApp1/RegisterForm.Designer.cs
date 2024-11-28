@@ -168,7 +168,7 @@
             // close
             // 
             this.close.AutoSize = true;
-            this.close.BackColor = System.Drawing.Color.Red;
+            this.close.BackColor = System.Drawing.Color.Silver;
             this.close.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.close.Location = new System.Drawing.Point(777, 0);
             this.close.Name = "close";
