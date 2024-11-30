@@ -29,7 +29,9 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            adminDashboardForm1.Visible = true;
+            adminAddUsers1.Visible = false;
+            adminAddProducts1.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -61,6 +63,25 @@ namespace WindowsFormsApp1
                 this.Hide();
 
             }
+        }
+
+        private void adminAddProducts1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            adminDashboardForm1.Visible = false;
+            adminAddUsers1.Visible = true;
+            adminAddProducts1.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            adminDashboardForm1.Visible = false;
+            adminAddUsers1.Visible = false;
+            adminAddProducts1.Visible = true;
         }
     }
 }
