@@ -31,5 +31,36 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminAddUsers1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            DialogResult  result = MessageBox.Show("Are you sure  you want  to exit ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result==DialogResult.Yes )
+                {
+                Application.Exit();
+            }
+;        }
+
+        private void button5_Click(object sender, EventArgs e)//Should be names as LogOut_button but unknown error occur
+        {
+            DialogResult check = MessageBox.Show("Are you Sure to log out ?","Confirmation Message ",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (check == DialogResult.Yes)
+            {
+                LoginPage login=new LoginPage();
+                login.Show();
+                this.Hide();
+
+            }
+        }
     }
 }

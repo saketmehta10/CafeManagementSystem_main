@@ -9,12 +9,13 @@ namespace WindowsFormsApp1
     {
         SqlConnection connect = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=""New Database"";Integrated Security=True;");
 
-        public int ID { set; get; }
+        public int ID { set; get; }//auto-implemented properties managed by compiler  automatically 
         public string Username { set; get; }
         public string Password { set; get; }
         public string Role { set; get; }
         public string Status { set; get; }
         public string DateRegistered { set; get; }
+        public string Image { set; get; }
 
         public List<AdminAddUsersData> usersListData()
         {
@@ -39,6 +40,7 @@ namespace WindowsFormsApp1
                             userData.Password = reader["password"].ToString();
                             userData.Role = reader["role"].ToString();
                             userData.Status = reader["status"].ToString();
+                            userData.Image = reader["profile_image"].ToString();
                             userData.DateRegistered = reader["date_reg"].ToString();
 
                             listData.Add(userData);  // Add user to list

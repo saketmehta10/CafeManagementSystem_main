@@ -28,130 +28,193 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.adminAddUser_importbtn = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.adminAddUser_imageView = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.adminAddUser_clearbtn = new System.Windows.Forms.Button();
+            this.adminAddUser_deletebtn = new System.Windows.Forms.Button();
+            this.adminAddUser_update_btn = new System.Windows.Forms.Button();
+            this.adminAddUser_addbtn = new System.Windows.Forms.Button();
+            this.adminAddUser_status = new System.Windows.Forms.ComboBox();
+            this.adminAddUser_role = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.adminAddUser_password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.adminAddUser_username = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.adminAddUser_imageView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.adminAddUser_importbtn);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.adminAddUser_clearbtn);
+            this.panel1.Controls.Add(this.adminAddUser_deletebtn);
+            this.panel1.Controls.Add(this.adminAddUser_update_btn);
+            this.panel1.Controls.Add(this.adminAddUser_addbtn);
+            this.panel1.Controls.Add(this.adminAddUser_status);
+            this.panel1.Controls.Add(this.adminAddUser_role);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.adminAddUser_password);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.adminAddUser_username);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(22, 14);
+            this.panel1.Location = new System.Drawing.Point(29, 17);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(252, 544);
+            this.panel1.Size = new System.Drawing.Size(336, 670);
             this.panel1.TabIndex = 0;
             // 
-            // button3
+            // adminAddUser_importbtn
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(136, 289);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 35);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Clear";
-            this.button3.UseVisualStyleBackColor = false;
+            this.adminAddUser_importbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.adminAddUser_importbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adminAddUser_importbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminAddUser_importbtn.ForeColor = System.Drawing.Color.White;
+            this.adminAddUser_importbtn.Location = new System.Drawing.Point(99, 161);
+            this.adminAddUser_importbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.adminAddUser_importbtn.Name = "adminAddUser_importbtn";
+            this.adminAddUser_importbtn.Size = new System.Drawing.Size(124, 43);
+            this.adminAddUser_importbtn.TabIndex = 15;
+            this.adminAddUser_importbtn.Text = "Import";
+            this.adminAddUser_importbtn.UseVisualStyleBackColor = false;
+            this.adminAddUser_importbtn.Click += new System.EventHandler(this.adminAddUser_importbtn_Click);
             // 
-            // button4
+            // panel4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(16, 289);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(93, 35);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
+            this.panel4.BackColor = System.Drawing.Color.Silver;
+            this.panel4.Controls.Add(this.adminAddUser_imageView);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Location = new System.Drawing.Point(99, 21);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(124, 133);
+            this.panel4.TabIndex = 0;
             // 
-            // button2
+            // adminAddUser_imageView
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(136, 230);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 35);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.adminAddUser_imageView.Location = new System.Drawing.Point(3, 3);
+            this.adminAddUser_imageView.Name = "adminAddUser_imageView";
+            this.adminAddUser_imageView.Size = new System.Drawing.Size(121, 127);
+            this.adminAddUser_imageView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.adminAddUser_imageView.TabIndex = 1;
+            this.adminAddUser_imageView.TabStop = false;
             // 
-            // button1
+            // pictureBox1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(16, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // comboBox2
+            // adminAddUser_clearbtn
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.adminAddUser_clearbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.adminAddUser_clearbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adminAddUser_clearbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminAddUser_clearbtn.ForeColor = System.Drawing.Color.White;
+            this.adminAddUser_clearbtn.Location = new System.Drawing.Point(189, 575);
+            this.adminAddUser_clearbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.adminAddUser_clearbtn.Name = "adminAddUser_clearbtn";
+            this.adminAddUser_clearbtn.Size = new System.Drawing.Size(124, 43);
+            this.adminAddUser_clearbtn.TabIndex = 13;
+            this.adminAddUser_clearbtn.Text = "Clear";
+            this.adminAddUser_clearbtn.UseVisualStyleBackColor = false;
+            this.adminAddUser_clearbtn.Click += new System.EventHandler(this.adminAddUser_clearbtn_Click);
+            // 
+            // adminAddUser_deletebtn
+            // 
+            this.adminAddUser_deletebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.adminAddUser_deletebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adminAddUser_deletebtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminAddUser_deletebtn.ForeColor = System.Drawing.Color.White;
+            this.adminAddUser_deletebtn.Location = new System.Drawing.Point(29, 575);
+            this.adminAddUser_deletebtn.Margin = new System.Windows.Forms.Padding(4);
+            this.adminAddUser_deletebtn.Name = "adminAddUser_deletebtn";
+            this.adminAddUser_deletebtn.Size = new System.Drawing.Size(124, 43);
+            this.adminAddUser_deletebtn.TabIndex = 12;
+            this.adminAddUser_deletebtn.Text = "Delete";
+            this.adminAddUser_deletebtn.UseVisualStyleBackColor = false;
+            this.adminAddUser_deletebtn.Click += new System.EventHandler(this.adminAddUser_deletebtn_Click);
+            // 
+            // adminAddUser_update_btn
+            // 
+            this.adminAddUser_update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.adminAddUser_update_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adminAddUser_update_btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminAddUser_update_btn.ForeColor = System.Drawing.Color.White;
+            this.adminAddUser_update_btn.Location = new System.Drawing.Point(189, 502);
+            this.adminAddUser_update_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.adminAddUser_update_btn.Name = "adminAddUser_update_btn";
+            this.adminAddUser_update_btn.Size = new System.Drawing.Size(124, 43);
+            this.adminAddUser_update_btn.TabIndex = 11;
+            this.adminAddUser_update_btn.Text = "Update";
+            this.adminAddUser_update_btn.UseVisualStyleBackColor = false;
+            this.adminAddUser_update_btn.Click += new System.EventHandler(this.addUserdata_updatebtn_Click);
+            // 
+            // adminAddUser_addbtn
+            // 
+            this.adminAddUser_addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.adminAddUser_addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adminAddUser_addbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminAddUser_addbtn.ForeColor = System.Drawing.Color.White;
+            this.adminAddUser_addbtn.Location = new System.Drawing.Point(29, 502);
+            this.adminAddUser_addbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.adminAddUser_addbtn.Name = "adminAddUser_addbtn";
+            this.adminAddUser_addbtn.Size = new System.Drawing.Size(124, 43);
+            this.adminAddUser_addbtn.TabIndex = 2;
+            this.adminAddUser_addbtn.Text = "Add";
+            this.adminAddUser_addbtn.UseVisualStyleBackColor = false;
+            this.adminAddUser_addbtn.Click += new System.EventHandler(this.adminAddUser_addbtn_Click);
+            // 
+            // adminAddUser_status
+            // 
+            this.adminAddUser_status.FormattingEnabled = true;
+            this.adminAddUser_status.Items.AddRange(new object[] {
             "Active",
             "Inactive",
             "Apprival"});
-            this.comboBox2.Location = new System.Drawing.Point(90, 165);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(139, 21);
-            this.comboBox2.TabIndex = 10;
+            this.adminAddUser_status.Location = new System.Drawing.Point(129, 443);
+            this.adminAddUser_status.Margin = new System.Windows.Forms.Padding(4);
+            this.adminAddUser_status.Name = "adminAddUser_status";
+            this.adminAddUser_status.Size = new System.Drawing.Size(184, 24);
+            this.adminAddUser_status.TabIndex = 10;
             // 
-            // comboBox1
+            // adminAddUser_role
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.adminAddUser_role.FormattingEnabled = true;
+            this.adminAddUser_role.Items.AddRange(new object[] {
             "Admin",
             "Cashier"});
-            this.comboBox1.Location = new System.Drawing.Point(90, 116);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(139, 21);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.adminAddUser_role.Location = new System.Drawing.Point(129, 383);
+            this.adminAddUser_role.Margin = new System.Windows.Forms.Padding(4);
+            this.adminAddUser_role.Name = "adminAddUser_role";
+            this.adminAddUser_role.Size = new System.Drawing.Size(184, 24);
+            this.adminAddUser_role.TabIndex = 2;
+            this.adminAddUser_role.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(25, 171);
+            this.label4.Location = new System.Drawing.Point(42, 450);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 15);
+            this.label4.Size = new System.Drawing.Size(70, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Status :";
             // 
@@ -159,43 +222,48 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(38, 122);
+            this.label5.Location = new System.Drawing.Point(60, 390);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 15);
+            this.label5.Size = new System.Drawing.Size(55, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "Role :";
             // 
-            // textBox2
+            // adminAddUser_password
             // 
-            this.textBox2.Location = new System.Drawing.Point(90, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(139, 20);
-            this.textBox2.TabIndex = 4;
+            this.adminAddUser_password.Location = new System.Drawing.Point(129, 327);
+            this.adminAddUser_password.Margin = new System.Windows.Forms.Padding(4);
+            this.adminAddUser_password.Name = "adminAddUser_password";
+            this.adminAddUser_password.Size = new System.Drawing.Size(184, 22);
+            this.adminAddUser_password.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 76);
+            this.label2.Location = new System.Drawing.Point(13, 334);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 15);
+            this.label2.Size = new System.Drawing.Size(99, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password :";
             // 
-            // textBox1
+            // adminAddUser_username
             // 
-            this.textBox1.Location = new System.Drawing.Point(90, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 20);
-            this.textBox1.TabIndex = 2;
+            this.adminAddUser_username.Location = new System.Drawing.Point(129, 274);
+            this.adminAddUser_username.Margin = new System.Windows.Forms.Padding(4);
+            this.adminAddUser_username.Name = "adminAddUser_username";
+            this.adminAddUser_username.Size = new System.Drawing.Size(184, 22);
+            this.adminAddUser_username.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 33);
+            this.label3.Location = new System.Drawing.Point(13, 281);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 15);
+            this.label3.Size = new System.Drawing.Size(102, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Username :";
             // 
@@ -203,9 +271,10 @@
             // 
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(280, 14);
+            this.panel2.Location = new System.Drawing.Point(373, 17);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(722, 544);
+            this.panel2.Size = new System.Drawing.Size(963, 670);
             this.panel2.TabIndex = 1;
             // 
             // dataGridView1
@@ -213,43 +282,52 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 65);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(674, 477);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(899, 587);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 17);
+            this.label1.Location = new System.Drawing.Point(28, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 22);
+            this.label1.Size = new System.Drawing.Size(169, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Data of Users";
             // 
             // AdminAddUsers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminAddUsers";
-            this.Size = new System.Drawing.Size(1015, 572);
+            this.Size = new System.Drawing.Size(1353, 704);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.adminAddUser_imageView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -263,17 +341,21 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox adminAddUser_password;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox adminAddUser_username;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox adminAddUser_status;
+        private System.Windows.Forms.ComboBox adminAddUser_role;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button adminAddUser_addbtn;
+        private System.Windows.Forms.Button adminAddUser_clearbtn;
+        private System.Windows.Forms.Button adminAddUser_deletebtn;
+        private System.Windows.Forms.Button adminAddUser_update_btn;
+        private System.Windows.Forms.Button adminAddUser_importbtn;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox adminAddUser_imageView;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

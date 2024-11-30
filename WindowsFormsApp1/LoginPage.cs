@@ -87,6 +87,11 @@ namespace WindowsFormsApp1
                             if (table.Rows.Count > 0)
                             {
                                 MessageBox.Show("login Sucessfull", "Messsage", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                //Calling  AdminMainForm  after login password match 
+                                AdminMainForm adminForm = new AdminMainForm();
+                                adminForm.Show();
+                                this.Hide();
                             }
                             else 
                             {
