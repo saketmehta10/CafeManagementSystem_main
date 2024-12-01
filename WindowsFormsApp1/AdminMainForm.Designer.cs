@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.addMain_customerBtn = new System.Windows.Forms.Button();
             this.LogOut_button = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.adminDashboardForm1 = new WindowsFormsApp1.AdminDashboardForm();
             this.adminAddProducts1 = new WindowsFormsApp1.AdminAddProducts();
             this.adminAddUsers1 = new WindowsFormsApp1.AdminAddUsers();
-            this.addMain_customerBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,9 +60,8 @@
             this.panel1.Controls.Add(this.close);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1707, 750);
+            this.panel1.Size = new System.Drawing.Size(1273, 609);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -71,9 +70,10 @@
             this.close_btn.AutoSize = true;
             this.close_btn.BackColor = System.Drawing.Color.Gray;
             this.close_btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close_btn.Location = new System.Drawing.Point(1613, 15);
+            this.close_btn.Location = new System.Drawing.Point(1210, 12);
+            this.close_btn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.close_btn.Name = "close_btn";
-            this.close_btn.Size = new System.Drawing.Size(22, 23);
+            this.close_btn.Size = new System.Drawing.Size(18, 18);
             this.close_btn.TabIndex = 15;
             this.close_btn.Text = "X";
             this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
@@ -83,9 +83,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 17);
+            this.label1.Location = new System.Drawing.Point(11, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(300, 22);
+            this.label1.Size = new System.Drawing.Size(237, 17);
             this.label1.TabIndex = 14;
             this.label1.Text = "Cafe Shop Management System";
             // 
@@ -94,9 +95,10 @@
             this.close.AutoSize = true;
             this.close.BackColor = System.Drawing.Color.Transparent;
             this.close.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.Location = new System.Drawing.Point(1643, 11);
+            this.close.Location = new System.Drawing.Point(1232, 9);
+            this.close.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(26, 28);
+            this.close.Size = new System.Drawing.Size(21, 22);
             this.close.TabIndex = 13;
             this.close.Text = "X";
             // 
@@ -114,21 +116,32 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(344, 750);
+            this.panel2.Size = new System.Drawing.Size(258, 609);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // addMain_customerBtn
+            // 
+            this.addMain_customerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addMain_customerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addMain_customerBtn.ForeColor = System.Drawing.Color.White;
+            this.addMain_customerBtn.Location = new System.Drawing.Point(14, 382);
+            this.addMain_customerBtn.Name = "addMain_customerBtn";
+            this.addMain_customerBtn.Size = new System.Drawing.Size(234, 33);
+            this.addMain_customerBtn.TabIndex = 22;
+            this.addMain_customerBtn.Text = "Add Customer";
+            this.addMain_customerBtn.UseVisualStyleBackColor = true;
+            this.addMain_customerBtn.Click += new System.EventHandler(this.addMain_customerBtn_Click);
             // 
             // LogOut_button
             // 
             this.LogOut_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogOut_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogOut_button.ForeColor = System.Drawing.Color.White;
-            this.LogOut_button.Location = new System.Drawing.Point(13, 637);
-            this.LogOut_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LogOut_button.Location = new System.Drawing.Point(10, 518);
             this.LogOut_button.Name = "LogOut_button";
-            this.LogOut_button.Size = new System.Drawing.Size(312, 41);
+            this.LogOut_button.Size = new System.Drawing.Size(234, 33);
             this.LogOut_button.TabIndex = 21;
             this.LogOut_button.Text = "Log Out";
             this.LogOut_button.UseVisualStyleBackColor = true;
@@ -139,10 +152,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(19, 412);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Location = new System.Drawing.Point(14, 335);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(312, 41);
+            this.button4.Size = new System.Drawing.Size(234, 33);
             this.button4.TabIndex = 19;
             this.button4.Text = "Add Products";
             this.button4.UseVisualStyleBackColor = true;
@@ -153,10 +165,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(19, 348);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(14, 283);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(312, 41);
+            this.button2.Size = new System.Drawing.Size(234, 33);
             this.button2.TabIndex = 18;
             this.button2.Text = "Add Cashier";
             this.button2.UseVisualStyleBackColor = true;
@@ -167,10 +178,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(19, 281);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(14, 228);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(312, 41);
+            this.button1.Size = new System.Drawing.Size(234, 33);
             this.button1.TabIndex = 2;
             this.button1.Text = "Dashboard";
             this.button1.UseVisualStyleBackColor = true;
@@ -182,9 +192,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(195, 239);
+            this.label4.Location = new System.Drawing.Point(146, 194);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 20);
+            this.label4.Size = new System.Drawing.Size(48, 15);
             this.label4.TabIndex = 17;
             this.label4.Text = "Admin";
             // 
@@ -194,9 +205,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(60, 239);
+            this.label3.Location = new System.Drawing.Point(45, 194);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 20);
+            this.label3.Size = new System.Drawing.Size(81, 15);
             this.label3.TabIndex = 16;
             this.label3.Text = "Username :";
             // 
@@ -206,18 +218,18 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(67, 188);
+            this.label2.Location = new System.Drawing.Point(50, 153);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 28);
+            this.label2.Size = new System.Drawing.Size(144, 22);
             this.label2.TabIndex = 15;
             this.label2.Text = "Admin\'s Portal";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(85, 59);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 48);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 127);
+            this.pictureBox1.Size = new System.Drawing.Size(114, 103);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -228,62 +240,46 @@
             this.panel3.Controls.Add(this.adminAddProducts1);
             this.panel3.Controls.Add(this.adminAddUsers1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(344, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(258, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1363, 750);
+            this.panel3.Size = new System.Drawing.Size(1015, 609);
             this.panel3.TabIndex = 2;
             // 
             // adminDashboardForm1
             // 
             this.adminDashboardForm1.Location = new System.Drawing.Point(0, 0);
-            this.adminDashboardForm1.Margin = new System.Windows.Forms.Padding(5);
+            this.adminDashboardForm1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.adminDashboardForm1.Name = "adminDashboardForm1";
-            this.adminDashboardForm1.Size = new System.Drawing.Size(1352, 686);
+            this.adminDashboardForm1.Size = new System.Drawing.Size(1014, 609);
             this.adminDashboardForm1.TabIndex = 2;
             this.adminDashboardForm1.Load += new System.EventHandler(this.adminDashboardForm1_Load);
             // 
             // adminAddProducts1
             // 
             this.adminAddProducts1.Location = new System.Drawing.Point(0, 0);
-            this.adminAddProducts1.Margin = new System.Windows.Forms.Padding(5);
+            this.adminAddProducts1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.adminAddProducts1.Name = "adminAddProducts1";
-            this.adminAddProducts1.Size = new System.Drawing.Size(1353, 694);
+            this.adminAddProducts1.Size = new System.Drawing.Size(1015, 609);
             this.adminAddProducts1.TabIndex = 1;
             this.adminAddProducts1.Load += new System.EventHandler(this.adminAddProducts1_Load);
             // 
             // adminAddUsers1
             // 
-            this.adminAddUsers1.Location = new System.Drawing.Point(75, -11);
-            this.adminAddUsers1.Margin = new System.Windows.Forms.Padding(5);
+            this.adminAddUsers1.Location = new System.Drawing.Point(-2, 0);
+            this.adminAddUsers1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.adminAddUsers1.Name = "adminAddUsers1";
-            this.adminAddUsers1.Size = new System.Drawing.Size(1351, 689);
+            this.adminAddUsers1.Size = new System.Drawing.Size(1013, 609);
             this.adminAddUsers1.TabIndex = 0;
             this.adminAddUsers1.Load += new System.EventHandler(this.adminAddUsers1_Load);
             // 
-            // addMain_customerBtn
-            // 
-            this.addMain_customerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addMain_customerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMain_customerBtn.ForeColor = System.Drawing.Color.White;
-            this.addMain_customerBtn.Location = new System.Drawing.Point(19, 470);
-            this.addMain_customerBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.addMain_customerBtn.Name = "addMain_customerBtn";
-            this.addMain_customerBtn.Size = new System.Drawing.Size(312, 41);
-            this.addMain_customerBtn.TabIndex = 22;
-            this.addMain_customerBtn.Text = "Add Customer";
-            this.addMain_customerBtn.UseVisualStyleBackColor = true;
-            this.addMain_customerBtn.Click += new System.EventHandler(this.addMain_customerBtn_Click);
-            // 
             // AdminMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1707, 750);
+            this.ClientSize = new System.Drawing.Size(1273, 609);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminMainForm";

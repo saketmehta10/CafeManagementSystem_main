@@ -22,6 +22,8 @@ namespace WindowsFormsApp1
             displayData();
         }
 
+
+
         public bool emptyFields()
         {
             if (adminAddProducts_id.Text == "" || adminAddProducts_name.Text == "" || adminAddProducts_type.SelectedIndex == -1 || adminAddProducts_stock.Text == ""
@@ -42,6 +44,8 @@ namespace WindowsFormsApp1
             dataGridView1.DataSource = listData;
         }
 
+
+        //Update Button Functionallity
         private void adminAddProducts_updateBtn_Click(object sender, EventArgs e)
         {
             if (emptyFields())
@@ -62,6 +66,8 @@ namespace WindowsFormsApp1
                             string updateData = "UPDATE products SET prod_name = @prodName, prod_type = @prodType, prod_stock = @prodStock, prod_price = @prodPrice, prod_status = @prodStatus, date_update = @dateUpdate WHERE prod_id = @prodID";
 
                             DateTime today = DateTime.Today;
+
+                            //Parameterized Query for update
                             using (SqlCommand updateD = new SqlCommand(updateData, connect))
                             {
                                 updateD.Parameters.AddWithValue("@prodName", adminAddProducts_name.Text.Trim());
@@ -170,6 +176,8 @@ namespace WindowsFormsApp1
 
                                 DateTime today = DateTime.Today;
 
+
+                                //file path where the product's image will be saved.
                                 string path = Path.Combine(@"C:\Product_Images\" + adminAddProducts_id.Text.Trim() + ".jpg");  // Change path as needed
 
                                 string directoryPath = Path.GetDirectoryName(path);
@@ -178,7 +186,11 @@ namespace WindowsFormsApp1
                                     Directory.CreateDirectory(directoryPath);
                                 }
 
-                                File.Copy(adminAddProducts_imageView.ImageLocation, path, true);
+
+                                File.Copy(adminAddProducts_imageView.ImageLocation, path, true);  //Copies the selected image file to the specified path. 
+                                                                                                  // //adminAddProducts_imageView.ImageLocation: The full path of the source image file(selected by the user in the UI).
+                                                                                                  //path: The destination where the image will be saved.
+                                                                                                  //true: Overwrites the file at the destination if it already exists.
 
                                 using (SqlCommand cmd = new SqlCommand(insertData, connect))
                                 {
@@ -215,12 +227,12 @@ namespace WindowsFormsApp1
         {
             try
             {
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "Image Files (*.jpg;*.png)|*.jpg;*.png";
+                OpenFileDialog dialog = new OpenFileDialog();   //This is a built-in Windows dialog that allows the user to browse their file system and select files
+                dialog.Filter = "Image Files (*.jpg;*.png)|*.jpg;*.png";  //Restricts the types of files the user can select
 
-                if (dialog.ShowDialog() == DialogResult.OK)
+                if (dialog.ShowDialog() == DialogResult.OK)  //DialogResult.OK: Indicates that the user selected a file and clicked OK.
                 {
-                    adminAddProducts_imageView.ImageLocation = dialog.FileName;
+                    adminAddProducts_imageView.ImageLocation = dialog.FileName;   //location of the selected file/image
                 }
             }
             catch (Exception ex)
@@ -249,7 +261,9 @@ namespace WindowsFormsApp1
         {
             if (e.RowIndex >= 0)
             {
-                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];  //Retrieves the entire row that corresponds to the clicked cell.
+
+                //Assigns the values from specific cells in the clicked row to corresponding input fields.
                 adminAddProducts_id.Text = row.Cells[1].Value.ToString();
                 adminAddProducts_name.Text = row.Cells[2].Value.ToString();
                 adminAddProducts_type.Text = row.Cells[3].Value.ToString();

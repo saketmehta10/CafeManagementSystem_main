@@ -41,6 +41,7 @@ namespace WindowsFormsApp1
                 {
                     connect.Open();
 
+                    //The query fetches only the records of products that are still active or not deleted
                     string selectData = "SELECT * FROM products WHERE date_delete IS NULL";
 
                     using (SqlCommand cmd = new SqlCommand(selectData, connect))
@@ -48,6 +49,8 @@ namespace WindowsFormsApp1
                         SqlDataReader reader = cmd.ExecuteReader();
                         while (reader.Read())
                         {
+
+                            //This object (apd) will hold the data for a single product retrieved from the database.
                             AdminAddProductsData apd = new AdminAddProductsData();
 
                             apd.ID = (int)reader["id"];
@@ -61,7 +64,7 @@ namespace WindowsFormsApp1
                             apd.DateInsert = reader["date_insert"].ToString();
                             apd.DateUpdate = reader["date_update"].ToString();
 
-
+                            //The object(apd) data stored in the list 
                             listData.Add(apd);
                         }
                     }
