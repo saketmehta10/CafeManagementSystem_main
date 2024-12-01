@@ -82,16 +82,28 @@ namespace WindowsFormsApp1
                             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                             DataTable table=new DataTable();
                             adapter.Fill(table);
+                           
 
                             // if their is a ny data in the table means the query matched And  Login will be sucessfull 
                             if (table.Rows.Count > 0)
                             {
                                 MessageBox.Show("login Sucessfull", "Messsage", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                                //Calling  AdminMainForm  after login password match 
-                                AdminMainForm adminForm = new AdminMainForm();
-                                adminForm.Show();
-                                this.Hide();
+                                string userRole = table.Rows[0][4].ToString();
+                                
+                                //Checking  Weather user us Admin or Cashier 
+                                if (userRole.ToLower() == "admin")
+                                {
+                                    //Calling  AdminMainForm  after login password match 
+                                    AdminMainForm adminForm = new AdminMainForm(); 
+                                    adminForm.Show();
+                                    this.Hide();
+                                }
+                                else if(userRole.ToLower()=="cashier")
+                                {
+                                 CashierMainForm cashierMainForm = new CashierMainForm();   
+                                    cashierMainForm.Show();
+                                    this.Hide();
+                                }
                             }
                             else 
                             {
@@ -111,6 +123,11 @@ namespace WindowsFormsApp1
 
                 }
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

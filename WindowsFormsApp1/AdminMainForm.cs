@@ -83,5 +83,26 @@ namespace WindowsFormsApp1
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = true;
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void adminDashboardForm1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void addMain_customerBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
