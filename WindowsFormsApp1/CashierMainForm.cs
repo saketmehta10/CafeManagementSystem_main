@@ -47,5 +47,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void adminAddProducts1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

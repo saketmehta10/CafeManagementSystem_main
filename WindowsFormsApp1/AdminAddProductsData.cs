@@ -43,9 +43,10 @@ namespace WindowsFormsApp1
 
                     //The query fetches only the records of products that are still active or not deleted
                     string selectData = "SELECT * FROM products WHERE date_delete IS NULL";
-
+                    
                     using (SqlCommand cmd = new SqlCommand(selectData, connect))
                     {
+                        cmd.Parameters.AddWithValue("@status", "Available");
                         SqlDataReader reader = cmd.ExecuteReader();
                         while (reader.Read())
                         {
@@ -83,5 +84,65 @@ namespace WindowsFormsApp1
             }
             return listData;
         }
+
+
+        public List<AdminAddProductsData> availableProductsData()
+        {
+            List<AdminAddProductsData> listData = new List<AdminAddProductsData>();
+            try
+            {
+                // Ensure connection is open
+                if (connect.State == ConnectionState.Closed)
+                {
+                    connect.Open();
+                }
+                // Define your SQL query (ensure the table name is correct)
+                string selectData = "SELECT * FROM products WHERE date_delete IS NULL";
+                // Execute the query and read data
+                using (SqlCommand cmd = new SqlCommand(selectData, connect))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            AdminAddProductsData apd = new AdminAddProductsData();
+
+                            apd.ID = (int)reader["id"];
+                            apd.ProductID = reader["prod_id"].ToString();
+                            apd.ProductName = reader["prod_name"].ToString();
+                            apd.Type = reader["prod_type"].ToString();
+                            apd.Stock = reader["prod_stock"].ToString();
+                            apd.Price = reader["prod_price"].ToString();
+                                //Status = reader["prod_status"].ToString(),
+                                //Image = reader["prod_image"].ToString(),
+                                //DateInsert = reader["date_insert"].ToString(),
+                                //DateUpdate = reader["date_update"].ToString()
+                            
+
+                            // Add the product to the list
+                            listData.Add(apd);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                Console.WriteLine("Failed to fetch products: " + ex.Message);
+            }
+            finally
+            {
+                // Ensure the connection is closed
+                if (connect.State == ConnectionState.Open)
+                {
+                    connect.Close();
+                }
+            }
+
+            // Return the populated list
+            return listData;
+        }
+
     }
 }
+    
