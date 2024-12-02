@@ -93,6 +93,7 @@
             this.cashierOrderForm_menuTable.RowHeadersWidth = 51;
             this.cashierOrderForm_menuTable.Size = new System.Drawing.Size(820, 265);
             this.cashierOrderForm_menuTable.TabIndex = 1;
+            this.cashierOrderForm_menuTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cashierOrderForm_menuTable_CellContentClick);
             // 
             // panel2
             // 
@@ -149,13 +150,14 @@
             this.cashierOrderForm_addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cashierOrderForm_addBtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cashierOrderForm_addBtn.ForeColor = System.Drawing.Color.White;
-            this.cashierOrderForm_addBtn.Location = new System.Drawing.Point(113, 239);
+            this.cashierOrderForm_addBtn.Location = new System.Drawing.Point(125, 239);
             this.cashierOrderForm_addBtn.Margin = new System.Windows.Forms.Padding(4);
             this.cashierOrderForm_addBtn.Name = "cashierOrderForm_addBtn";
             this.cashierOrderForm_addBtn.Size = new System.Drawing.Size(171, 43);
             this.cashierOrderForm_addBtn.TabIndex = 21;
             this.cashierOrderForm_addBtn.Text = "Add";
             this.cashierOrderForm_addBtn.UseVisualStyleBackColor = false;
+            this.cashierOrderForm_addBtn.Click += new System.EventHandler(this.cashierOrderForm_addBtn_Click);
             // 
             // cashierOrderForm_price
             // 
@@ -232,6 +234,7 @@
             this.cashierOrderForm_productID.Name = "cashierOrderForm_productID";
             this.cashierOrderForm_productID.Size = new System.Drawing.Size(236, 24);
             this.cashierOrderForm_productID.TabIndex = 14;
+            this.cashierOrderForm_productID.SelectedIndexChanged += new System.EventHandler(this.cashierOrderForm_productID_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -248,14 +251,14 @@
             // 
             this.cashierOrderForm_type.FormattingEnabled = true;
             this.cashierOrderForm_type.Items.AddRange(new object[] {
-            "Active",
-            "Inactive",
-            "Apprival"});
+            "Meal",
+            "Drinks"});
             this.cashierOrderForm_type.Location = new System.Drawing.Point(177, 32);
             this.cashierOrderForm_type.Margin = new System.Windows.Forms.Padding(4);
             this.cashierOrderForm_type.Name = "cashierOrderForm_type";
             this.cashierOrderForm_type.Size = new System.Drawing.Size(224, 24);
             this.cashierOrderForm_type.TabIndex = 12;
+            this.cashierOrderForm_type.SelectedIndexChanged += new System.EventHandler(this.cashierOrderForm_type_SelectedIndexChanged);
             // 
             // label4
             // 

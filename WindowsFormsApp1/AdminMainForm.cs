@@ -32,6 +32,8 @@ namespace WindowsFormsApp1
             adminDashboardForm1.Visible = true;
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = false;
+            cashierOrderForm1.Visible = false;
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -46,22 +48,21 @@ namespace WindowsFormsApp1
 
         private void close_btn_Click(object sender, EventArgs e)
         {
-            DialogResult  result = MessageBox.Show("Are you sure  you want  to exit ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (result==DialogResult.Yes )
-                {
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
                 Application.Exit();
             }
-;        }
+        }
 
-        private void button5_Click(object sender, EventArgs e)//Should be names as LogOut_button but unknown error occur
+        private void button5_Click(object sender, EventArgs e) // Should be named as LogOut_button but unknown error occurs
         {
-            DialogResult check = MessageBox.Show("Are you Sure to log out ?","Confirmation Message ",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            DialogResult check = MessageBox.Show("Are you sure you want to log out?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (check == DialogResult.Yes)
             {
-                LoginPage login=new LoginPage();
+                LoginPage login = new LoginPage();
                 login.Show();
                 this.Hide();
-
             }
         }
 
@@ -75,6 +76,7 @@ namespace WindowsFormsApp1
             adminDashboardForm1.Visible = false;
             adminAddUsers1.Visible = true;
             adminAddProducts1.Visible = false;
+            cashierOrderForm1.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -82,8 +84,12 @@ namespace WindowsFormsApp1
             adminDashboardForm1.Visible = false;
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = true;
+            cashierOrderForm1.Visible=false;
         }
+        private void addMain_customerBtn_Click(object sender, EventArgs e)
+        {
 
+        }
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -96,11 +102,12 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-            
+
         }
 
-        private void addMain_customerBtn_Click(object sender, EventArgs e)
+      
+
+        private void cashierOrderForm1_Load(object sender, EventArgs e)
         {
 
         }

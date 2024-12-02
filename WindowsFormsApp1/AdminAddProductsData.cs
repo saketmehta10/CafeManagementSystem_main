@@ -91,18 +91,18 @@ namespace WindowsFormsApp1
             List<AdminAddProductsData> listData = new List<AdminAddProductsData>();
             try
             {
-                // Ensure connection is open
-                if (connect.State == ConnectionState.Closed)
+               
+                if (connect.State == ConnectionState.Closed) // Ensure connection is open
                 {
                     connect.Open();
                 }
-                // Define your SQL query (ensure the table name is correct)
-                string selectData = "SELECT * FROM products WHERE date_delete IS NULL";
+               
+                string selectData = "SELECT * FROM products WHERE status= @stats";
                 // Execute the query and read data
                 using (SqlCommand cmd = new SqlCommand(selectData, connect))
                 {
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
+                    cmd.Parameters.AddWithValue("@stats", "Available");
+                    SqlDataReader reader = cmd.ExecuteReader();
                         while (reader.Read())
                         {
                             AdminAddProductsData apd = new AdminAddProductsData();
@@ -122,7 +122,7 @@ namespace WindowsFormsApp1
                             // Add the product to the list
                             listData.Add(apd);
                         }
-                    }
+                    
                 }
             }
             catch (Exception ex)

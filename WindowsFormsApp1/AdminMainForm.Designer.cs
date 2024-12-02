@@ -257,6 +257,7 @@
             this.cashierOrderForm1.Name = "cashierOrderForm1";
             this.cashierOrderForm1.Size = new System.Drawing.Size(1353, 704);
             this.cashierOrderForm1.TabIndex = 3;
+            this.cashierOrderForm1.Load += new System.EventHandler(this.cashierOrderForm1_Load);
             // 
             // adminDashboardForm1
             // 
