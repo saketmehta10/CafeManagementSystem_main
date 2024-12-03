@@ -32,7 +32,8 @@ namespace WindowsFormsApp1
 
         public void IDGenerator()
         {
-            using (SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\dell\Documents\cafe2.mdf;Integrated Security=True;"))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=""New Database"";Integrated Security=True;")
+)
             {
                 connect.Open();
                 string selectID = "SELECT MAX(customer_id) FROM customers";

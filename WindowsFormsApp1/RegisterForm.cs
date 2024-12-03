@@ -109,7 +109,7 @@ namespace WindowsFormsApp1
                     cmd.Parameters.AddWithValue("@usern", register_username.Text.Trim());
                     cmd.Parameters.AddWithValue("@pass", register_password.Text.Trim());
                     cmd.Parameters.AddWithValue("@image", DBNull.Value); // Use DBNull.Value for null database fields
-                    cmd.Parameters.AddWithValue("@role", "Cashier");
+                    cmd.Parameters.AddWithValue("@role", "cashier");
                     cmd.Parameters.AddWithValue("@status", "Approve");
                     cmd.Parameters.AddWithValue("@date", today);
 
