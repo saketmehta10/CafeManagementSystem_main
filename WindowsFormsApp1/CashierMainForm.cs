@@ -52,5 +52,20 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void Custome_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addProduct_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Order_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
