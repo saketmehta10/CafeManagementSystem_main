@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class LoginPage : Form
     {
-        SqlConnection conn;
+        SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=""New Database"";Integrated Security=True;");
         public LoginPage()
         {
             InitializeComponent();
@@ -64,7 +64,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=""New Database"";Integrated Security=True;");
+                
                 if (conn.State == ConnectionState.Closed)
                 {
                     try

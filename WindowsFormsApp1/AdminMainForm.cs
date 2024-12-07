@@ -17,34 +17,48 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void AdminMainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        //Dashbord
         private void button1_Click(object sender, EventArgs e)
         {
             adminDashboardForm1.Visible = true;
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = false;
+            cashierCustomersForm1.Visible = false;
             cashierOrderForm1.Visible = false;
 
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        //Add Cashier 
+        private void button2_Click(object sender, EventArgs e)
         {
+            adminDashboardForm1.Visible = false;
+            adminAddUsers1.Visible = true;
+            adminAddProducts1.Visible = false;
+            cashierOrderForm1.Visible = false;
+            cashierCustomersForm1.Visible = false;
+        }
+
+        //Add Product
+        private void button4_Click(object sender, EventArgs e)
+        {
+            adminDashboardForm1.Visible = false;
+            adminAddUsers1.Visible = false;
+            adminAddProducts1.Visible = true;
+            cashierOrderForm1.Visible = false;
+            cashierCustomersForm1.Visible = false;
+
+        }
+        //Add Customer 
+        private void addMain_customerBtn_Click(object sender, EventArgs e)
+        {
+            cashierCustomersForm1.Visible = true;
+            adminDashboardForm1.Visible = false;
+            adminAddUsers1.Visible = false;
+            adminAddProducts1.Visible = false;
+            cashierOrderForm1.Visible = false;
+
 
         }
 
-        private void adminAddUsers1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void close_btn_Click(object sender, EventArgs e)
         {
@@ -66,30 +80,23 @@ namespace WindowsFormsApp1
             }
         }
 
+
         private void adminAddProducts1_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            adminDashboardForm1.Visible = false;
-            adminAddUsers1.Visible = true;
-            adminAddProducts1.Visible = false;
-            cashierOrderForm1.Visible = false;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            adminDashboardForm1.Visible = false;
-            adminAddUsers1.Visible = false;
-            adminAddProducts1.Visible = true;
-            cashierOrderForm1.Visible=false;
-        }
-        private void addMain_customerBtn_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void adminAddUsers1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -103,11 +110,29 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
 
+            adminDashboardForm1.Visible = false;
+            adminAddUsers1.Visible = false;
+            adminAddProducts1.Visible = false;
+            cashierOrderForm1.Visible = true;
+            cashierCustomersForm1.Visible = false;
         }
 
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            // Your drawing code here
+        }
+        private void AdminMainForm_Load(object sender, EventArgs e)
+        {
+            // Your code for when the form loads goes here
+        }
 
         private void cashierOrderForm1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cashierCustomersForm1_Load(object sender, EventArgs e)
         {
 
         }

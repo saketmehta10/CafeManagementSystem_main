@@ -23,7 +23,6 @@ namespace WindowsFormsApp1
             if (check==DialogResult.Yes)
             {
                 Application.Exit();
-
             }
         }
 
@@ -55,17 +54,72 @@ namespace WindowsFormsApp1
 
         private void Custome_btn_Click(object sender, EventArgs e)
         {
+            adminDashboardForm1.Visible = false;
+            adminAddProducts1.Visible = false;
+            cashierOrderForm1.Visible = false;
+            cashierCustomersForm1.Visible = true;
 
+           cashierCustomersForm ccForm = cashierCustomersForm1 as cashierCustomersForm;
+
+            if (ccForm != null)
+            {
+                ccForm.refreshData();
+            }
         }
+    
+
+           
 
         private void addProduct_btn_Click(object sender, EventArgs e)
         {
+            adminDashboardForm1.Visible = false;
+            adminAddProducts1.Visible = true;
+            cashierOrderForm1.Visible = false;
+            cashierCustomersForm1.Visible = false;
+
+            AdminAddProducts aaProd = adminAddProducts1 as AdminAddProducts;
+
+            if (aaProd != null)
+            {
+                aaProd.refreshData();
+            }
+        }
+    
+        private void Order_btn_Click(object sender, EventArgs e)
+        {
+            adminDashboardForm1.Visible = false;
+            adminAddProducts1.Visible = false;
+            cashierOrderForm1.Visible = true;
+            cashierCustomersForm1.Visible = false;
+
+            CashierOrderForm coForm = cashierOrderForm1 as CashierOrderForm;
+
+            if (coForm != null)
+            {
+                coForm.refreshData();
+            }
+        
+        }
+
+
+        private void Dashboard_btn_Click(object sender, EventArgs e)
+        {
+            adminDashboardForm1.Visible = true;
+            adminAddProducts1.Visible = false;
+            cashierOrderForm1.Visible = false;
+            cashierCustomersForm1.Visible = false;
+
 
         }
 
-        private void Order_btn_Click(object sender, EventArgs e)
+        private void closebtn_Click(object sender, EventArgs e)
         {
+            DialogResult check = MessageBox.Show("Are you sure you want to exit?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (check == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

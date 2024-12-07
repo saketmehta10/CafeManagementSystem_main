@@ -23,7 +23,15 @@ namespace WindowsFormsApp1
         }
 
 
-
+        public void refreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)refreshData);
+                return;
+            }
+            displayData();
+        }
         public bool emptyFields()
         {
             if (adminAddProducts_id.Text == "" || adminAddProducts_name.Text == "" || adminAddProducts_type.SelectedIndex == -1 || adminAddProducts_stock.Text == ""
