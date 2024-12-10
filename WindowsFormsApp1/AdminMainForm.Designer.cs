@@ -44,11 +44,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cashierCustomersForm1 = new WindowsFormsApp1.cashierCustomersForm();
-            this.cashierOrderForm2 = new WindowsFormsApp1.CashierOrderForm();
-            this.cashierOrderForm1 = new WindowsFormsApp1.CashierOrderForm();
+            this.adminAddUsers1 = new WindowsFormsApp1.AdminAddUsers();
             this.adminDashboardForm1 = new WindowsFormsApp1.AdminDashboardForm();
             this.adminAddProducts1 = new WindowsFormsApp1.AdminAddProducts();
-            this.adminAddUsers1 = new WindowsFormsApp1.AdminAddUsers();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,7 +61,7 @@
             this.panel1.Controls.Add(this.close);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1729, 750);
             this.panel1.TabIndex = 0;
@@ -117,7 +115,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(344, 750);
             this.panel2.TabIndex = 1;
@@ -129,7 +127,7 @@
             this.addCustomer_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addCustomer_btn.ForeColor = System.Drawing.Color.White;
             this.addCustomer_btn.Location = new System.Drawing.Point(19, 470);
-            this.addCustomer_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addCustomer_btn.Margin = new System.Windows.Forms.Padding(4);
             this.addCustomer_btn.Name = "addCustomer_btn";
             this.addCustomer_btn.Size = new System.Drawing.Size(312, 41);
             this.addCustomer_btn.TabIndex = 22;
@@ -143,7 +141,7 @@
             this.LogOut_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogOut_button.ForeColor = System.Drawing.Color.White;
             this.LogOut_button.Location = new System.Drawing.Point(13, 638);
-            this.LogOut_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LogOut_button.Margin = new System.Windows.Forms.Padding(4);
             this.LogOut_button.Name = "LogOut_button";
             this.LogOut_button.Size = new System.Drawing.Size(312, 41);
             this.LogOut_button.TabIndex = 21;
@@ -157,7 +155,7 @@
             this.addProduct_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addProduct_btn.ForeColor = System.Drawing.Color.White;
             this.addProduct_btn.Location = new System.Drawing.Point(19, 412);
-            this.addProduct_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addProduct_btn.Margin = new System.Windows.Forms.Padding(4);
             this.addProduct_btn.Name = "addProduct_btn";
             this.addProduct_btn.Size = new System.Drawing.Size(312, 41);
             this.addProduct_btn.TabIndex = 19;
@@ -171,7 +169,7 @@
             this.addCashierButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addCashierButton.ForeColor = System.Drawing.Color.White;
             this.addCashierButton.Location = new System.Drawing.Point(19, 348);
-            this.addCashierButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addCashierButton.Margin = new System.Windows.Forms.Padding(4);
             this.addCashierButton.Name = "addCashierButton";
             this.addCashierButton.Size = new System.Drawing.Size(312, 41);
             this.addCashierButton.TabIndex = 18;
@@ -185,7 +183,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(19, 281);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(312, 41);
             this.button1.TabIndex = 2;
@@ -232,7 +230,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(85, 59);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(152, 127);
             this.pictureBox1.TabIndex = 0;
@@ -241,70 +239,48 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.cashierCustomersForm1);
-            this.panel3.Controls.Add(this.cashierOrderForm2);
-            this.panel3.Controls.Add(this.cashierOrderForm1);
-            this.panel3.Controls.Add(this.adminDashboardForm1);
             this.panel3.Controls.Add(this.adminAddProducts1);
+            this.panel3.Controls.Add(this.adminDashboardForm1);
             this.panel3.Controls.Add(this.adminAddUsers1);
+            this.panel3.Controls.Add(this.cashierCustomersForm1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(344, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1385, 750);
             this.panel3.TabIndex = 2;
             // 
             // cashierCustomersForm1
             // 
-            this.cashierCustomersForm1.Location = new System.Drawing.Point(-1, 0);
+            this.cashierCustomersForm1.Location = new System.Drawing.Point(0, 0);
             this.cashierCustomersForm1.Name = "cashierCustomersForm1";
-            this.cashierCustomersForm1.Size = new System.Drawing.Size(1386, 750);
-            this.cashierCustomersForm1.TabIndex = 5;
-            this.cashierCustomersForm1.Load += new System.EventHandler(this.cashierCustomersForm1_Load);
+            this.cashierCustomersForm1.Size = new System.Drawing.Size(1379, 745);
+            this.cashierCustomersForm1.TabIndex = 0;
             // 
-            // cashierOrderForm2
+            // adminAddUsers1
             // 
-            this.cashierOrderForm2.Location = new System.Drawing.Point(-1, 0);
-            this.cashierOrderForm2.Margin = new System.Windows.Forms.Padding(4);
-            this.cashierOrderForm2.Name = "cashierOrderForm2";
-            this.cashierOrderForm2.Size = new System.Drawing.Size(1339, 704);
-            this.cashierOrderForm2.TabIndex = 4;
-            // 
-            // cashierOrderForm1
-            // 
-            this.cashierOrderForm1.Location = new System.Drawing.Point(-1, 4);
-            this.cashierOrderForm1.Margin = new System.Windows.Forms.Padding(5);
-            this.cashierOrderForm1.Name = "cashierOrderForm1";
-            this.cashierOrderForm1.Size = new System.Drawing.Size(1353, 704);
-            this.cashierOrderForm1.TabIndex = 3;
-            this.cashierOrderForm1.Load += new System.EventHandler(this.cashierOrderForm1_Load);
+            this.adminAddUsers1.Location = new System.Drawing.Point(-4, 0);
+            this.adminAddUsers1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.adminAddUsers1.Name = "adminAddUsers1";
+            this.adminAddUsers1.Size = new System.Drawing.Size(1385, 704);
+            this.adminAddUsers1.TabIndex = 1;
             // 
             // adminDashboardForm1
             // 
             this.adminDashboardForm1.Location = new System.Drawing.Point(0, 0);
-            this.adminDashboardForm1.Margin = new System.Windows.Forms.Padding(5);
+            this.adminDashboardForm1.Margin = new System.Windows.Forms.Padding(4);
             this.adminDashboardForm1.Name = "adminDashboardForm1";
-            this.adminDashboardForm1.Size = new System.Drawing.Size(1352, 750);
+            this.adminDashboardForm1.Size = new System.Drawing.Size(1381, 679);
             this.adminDashboardForm1.TabIndex = 2;
-            this.adminDashboardForm1.Load += new System.EventHandler(this.adminDashboardForm1_Load);
+            this.adminDashboardForm1.Load += new System.EventHandler(this.adminDashboardForm1_Load_1);
             // 
             // adminAddProducts1
             // 
             this.adminAddProducts1.Location = new System.Drawing.Point(0, 0);
-            this.adminAddProducts1.Margin = new System.Windows.Forms.Padding(5);
+            this.adminAddProducts1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.adminAddProducts1.Name = "adminAddProducts1";
-            this.adminAddProducts1.Size = new System.Drawing.Size(1353, 750);
-            this.adminAddProducts1.TabIndex = 1;
-            this.adminAddProducts1.Load += new System.EventHandler(this.adminAddProducts1_Load);
-            // 
-            // adminAddUsers1
-            // 
-            this.adminAddUsers1.Location = new System.Drawing.Point(-3, 0);
-            this.adminAddUsers1.Margin = new System.Windows.Forms.Padding(5);
-            this.adminAddUsers1.Name = "adminAddUsers1";
-            this.adminAddUsers1.Size = new System.Drawing.Size(1351, 750);
-            this.adminAddUsers1.TabIndex = 0;
-            this.adminAddUsers1.Load += new System.EventHandler(this.adminAddUsers1_Load);
+            this.adminAddProducts1.Size = new System.Drawing.Size(1385, 704);
+            this.adminAddProducts1.TabIndex = 3;
             // 
             // AdminMainForm
             // 
@@ -314,7 +290,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminMainForm";
@@ -344,13 +320,11 @@
         private System.Windows.Forms.Button addProduct_btn;
         private System.Windows.Forms.Button addCashierButton;
         private System.Windows.Forms.Panel panel3;
-        private AdminAddUsers adminAddUsers1;
         private System.Windows.Forms.Label close_btn;
-        private AdminAddProducts adminAddProducts1;
-        private AdminDashboardForm adminDashboardForm1;
         private System.Windows.Forms.Button addCustomer_btn;
-        private CashierOrderForm cashierOrderForm1;
-        private CashierOrderForm cashierOrderForm2;
+        private AdminDashboardForm adminDashboardForm1;
+        private AdminAddUsers adminAddUsers1;
         private cashierCustomersForm cashierCustomersForm1;
+        private AdminAddProducts adminAddProducts1;
     }
 }

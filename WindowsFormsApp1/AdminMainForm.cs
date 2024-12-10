@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = false;
             cashierCustomersForm1.Visible = false;
-            cashierOrderForm1.Visible = false;
+          
 
         }
         //Add Cashier 
@@ -33,7 +33,6 @@ namespace WindowsFormsApp1
             adminDashboardForm1.Visible = false;
             adminAddUsers1.Visible = true;
             adminAddProducts1.Visible = false;
-            cashierOrderForm1.Visible = false;
             cashierCustomersForm1.Visible = false;
         }
 
@@ -43,7 +42,6 @@ namespace WindowsFormsApp1
             adminDashboardForm1.Visible = false;
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = true;
-            cashierOrderForm1.Visible = false;
             cashierCustomersForm1.Visible = false;
 
         }
@@ -54,7 +52,7 @@ namespace WindowsFormsApp1
             adminDashboardForm1.Visible = false;
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = false;
-            cashierOrderForm1.Visible = false;
+           
 
 
         }
@@ -113,7 +111,6 @@ namespace WindowsFormsApp1
             adminDashboardForm1.Visible = false;
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = false;
-            cashierOrderForm1.Visible = true;
             cashierCustomersForm1.Visible = false;
         }
 
@@ -133,6 +130,11 @@ namespace WindowsFormsApp1
         }
 
         private void cashierCustomersForm1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminDashboardForm1_Load_1(object sender, EventArgs e)
         {
 
         }

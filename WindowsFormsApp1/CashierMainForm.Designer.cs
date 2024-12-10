@@ -44,11 +44,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cashierOrderForm1 = new WindowsFormsApp1.CashierOrderForm();
+            this.cashierCustomersForm1 = new WindowsFormsApp1.cashierCustomersForm();
             this.closebtn = new System.Windows.Forms.Label();
             this.adminAddProducts1 = new WindowsFormsApp1.AdminAddProducts();
             this.adminDashboardForm1 = new WindowsFormsApp1.AdminDashboardForm();
-            this.cashierCustomersForm1 = new WindowsFormsApp1.cashierCustomersForm();
-            this.cashierOrderForm1 = new WindowsFormsApp1.CashierOrderForm();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -94,7 +94,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(137, 39);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(152, 127);
             this.pictureBox1.TabIndex = 22;
@@ -115,7 +115,7 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(343, 745);
             this.panel2.TabIndex = 31;
@@ -126,7 +126,7 @@
             this.Custome_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Custome_btn.ForeColor = System.Drawing.Color.White;
             this.Custome_btn.Location = new System.Drawing.Point(19, 471);
-            this.Custome_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Custome_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Custome_btn.Name = "Custome_btn";
             this.Custome_btn.Size = new System.Drawing.Size(312, 41);
             this.Custome_btn.TabIndex = 22;
@@ -140,7 +140,7 @@
             this.LogOut_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogOut_btn.ForeColor = System.Drawing.Color.White;
             this.LogOut_btn.Location = new System.Drawing.Point(13, 638);
-            this.LogOut_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LogOut_btn.Margin = new System.Windows.Forms.Padding(4);
             this.LogOut_btn.Name = "LogOut_btn";
             this.LogOut_btn.Size = new System.Drawing.Size(312, 41);
             this.LogOut_btn.TabIndex = 21;
@@ -154,7 +154,7 @@
             this.Order_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Order_btn.ForeColor = System.Drawing.Color.White;
             this.Order_btn.Location = new System.Drawing.Point(19, 411);
-            this.Order_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Order_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Order_btn.Name = "Order_btn";
             this.Order_btn.Size = new System.Drawing.Size(312, 41);
             this.Order_btn.TabIndex = 20;
@@ -168,7 +168,7 @@
             this.addProduct_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addProduct_btn.ForeColor = System.Drawing.Color.White;
             this.addProduct_btn.Location = new System.Drawing.Point(19, 343);
-            this.addProduct_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addProduct_btn.Margin = new System.Windows.Forms.Padding(4);
             this.addProduct_btn.Name = "addProduct_btn";
             this.addProduct_btn.Size = new System.Drawing.Size(312, 41);
             this.addProduct_btn.TabIndex = 19;
@@ -182,7 +182,7 @@
             this.Dashboard_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dashboard_btn.ForeColor = System.Drawing.Color.White;
             this.Dashboard_btn.Location = new System.Drawing.Point(19, 281);
-            this.Dashboard_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dashboard_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Dashboard_btn.Name = "Dashboard_btn";
             this.Dashboard_btn.Size = new System.Drawing.Size(312, 41);
             this.Dashboard_btn.TabIndex = 2;
@@ -229,7 +229,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(85, 59);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(152, 127);
             this.pictureBox2.TabIndex = 0;
@@ -261,6 +261,21 @@
             this.panel1.TabIndex = 33;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // cashierOrderForm1
+            // 
+            this.cashierOrderForm1.Location = new System.Drawing.Point(0, 0);
+            this.cashierOrderForm1.Margin = new System.Windows.Forms.Padding(4);
+            this.cashierOrderForm1.Name = "cashierOrderForm1";
+            this.cashierOrderForm1.Size = new System.Drawing.Size(1339, 704);
+            this.cashierOrderForm1.TabIndex = 4;
+            // 
+            // cashierCustomersForm1
+            // 
+            this.cashierCustomersForm1.Location = new System.Drawing.Point(0, 0);
+            this.cashierCustomersForm1.Name = "cashierCustomersForm1";
+            this.cashierCustomersForm1.Size = new System.Drawing.Size(1251, 745);
+            this.cashierCustomersForm1.TabIndex = 3;
+            // 
             // closebtn
             // 
             this.closebtn.AutoSize = true;
@@ -289,21 +304,6 @@
             this.adminDashboardForm1.Size = new System.Drawing.Size(1325, 745);
             this.adminDashboardForm1.TabIndex = 0;
             // 
-            // cashierCustomersForm1
-            // 
-            this.cashierCustomersForm1.Location = new System.Drawing.Point(0, 0);
-            this.cashierCustomersForm1.Name = "cashierCustomersForm1";
-            this.cashierCustomersForm1.Size = new System.Drawing.Size(1251, 745);
-            this.cashierCustomersForm1.TabIndex = 3;
-            // 
-            // cashierOrderForm1
-            // 
-            this.cashierOrderForm1.Location = new System.Drawing.Point(0, 0);
-            this.cashierOrderForm1.Margin = new System.Windows.Forms.Padding(4);
-            this.cashierOrderForm1.Name = "cashierOrderForm1";
-            this.cashierOrderForm1.Size = new System.Drawing.Size(1339, 704);
-            this.cashierOrderForm1.TabIndex = 4;
-            // 
             // CashierMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -317,7 +317,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CashierMainForm";
             this.Text = "CashierMainForm";

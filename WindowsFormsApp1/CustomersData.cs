@@ -10,7 +10,7 @@ namespace CafeShopManagementSystem
 {
     class CustomersData
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\USER\Documents\cafe.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=""New Database"";Integrated Security=True;");
 
         public int CustomerID { set; get; }
         public string TotalPrice { set; get; }
