@@ -24,7 +24,13 @@ namespace WindowsFormsApp1
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = false;
             cashierCustomersForm1.Visible = false;
-          
+
+            AdminDashboardForm adForm = adminDashboardForm1 as AdminDashboardForm;
+
+            if (adForm != null)
+            {
+                adForm.refreshData();
+            }
 
         }
         //Add Cashier 
@@ -34,6 +40,14 @@ namespace WindowsFormsApp1
             adminAddUsers1.Visible = true;
             adminAddProducts1.Visible = false;
             cashierCustomersForm1.Visible = false;
+
+            //AdminAddUsers aaUsers = adminAddUsers1 as AdminAddUsers;
+
+            //if (aaUsers != null)
+            //{
+            //    aaUsers.refreshData();
+            //}
+
         }
 
         //Add Product
@@ -44,6 +58,13 @@ namespace WindowsFormsApp1
             adminAddProducts1.Visible = true;
             cashierCustomersForm1.Visible = false;
 
+
+            AdminAddProducts aaProd = adminAddProducts1 as AdminAddProducts;
+
+            if (aaProd != null)
+            {
+                aaProd.refreshData();
+            }
         }
         //Add Customer 
         private void addMain_customerBtn_Click(object sender, EventArgs e)
@@ -52,7 +73,13 @@ namespace WindowsFormsApp1
             adminDashboardForm1.Visible = false;
             adminAddUsers1.Visible = false;
             adminAddProducts1.Visible = false;
-           
+
+            cashierCustomersForm ccForm = cashierCustomersForm1 as cashierCustomersForm;
+
+            if (ccForm != null)
+            {
+                ccForm.refreshData();
+            }
 
 
         }

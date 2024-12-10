@@ -171,9 +171,8 @@
             this.cashierOrderForm_price.Location = new System.Drawing.Point(173, 161);
             this.cashierOrderForm_price.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cashierOrderForm_price.Name = "cashierOrderForm_price";
-            this.cashierOrderForm_price.Size = new System.Drawing.Size(39, 20);
+            this.cashierOrderForm_price.Size = new System.Drawing.Size(0, 20);
             this.cashierOrderForm_price.TabIndex = 20;
-            this.cashierOrderForm_price.Text = "100";
             // 
             // label8
             // 

@@ -33,6 +33,15 @@ namespace WindowsFormsApp1
             dataGridView1.DataSource = listData;
         }
 
+        public void refreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)refreshData);
+                return;
+            }
+            displayAddUsersData();
+        }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -148,50 +157,124 @@ namespace WindowsFormsApp1
         private int id = 0;
 
         // Purpose: To populate fields with selected row's data from DataGridView.
+        //private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+        //    id = (int)row.Cells[0].Value;
+        //    adminAddUser_username.Text = row.Cells[1].Value.ToString();
+        //    adminAddUser_password.Text = row.Cells[2].Value.ToString();
+        //    adminAddUser_role.Text = row.Cells[3].Value.ToString();
+        //    adminAddUser_status.Text = row.Cells[4].Value.ToString();
+
+
+
+        //string imagePath = row.Cells[5].Value.ToString();
+
+        //    if (!string.IsNullOrEmpty(imagePath))
+        //    {
+        //        try
+        //        {
+        //            // Ensure the path is valid and absolute
+        //            string fullImagePath = Path.Combine(@"C:\Users\Dell\Desktop\Project1\WindowsFormsApp1\WindowsFormsApp1\User_Directory", imagePath);
+
+        //            // Check if the file exists before trying to load it
+        //            if (File.Exists(fullImagePath))
+        //            {
+        //                adminAddUser_imageView.Image = Image.FromFile(fullImagePath);
+        //            }
+        //            else
+        //            {
+        //                adminAddUser_imageView.Image = null; // Optionally, show a default image
+        //            }
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            // Log or display an error message if there is an issue loading the image
+        //            MessageBox.Show("Error loading image: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        adminAddUser_imageView.Image = null; // Optionally, show a default image
+        //    }
+
+        //}
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-            id = (int)row.Cells[0].Value;
-            adminAddUser_username.Text = row.Cells[1].Value.ToString();
-            adminAddUser_password.Text = row.Cells[2].Value.ToString();
-            adminAddUser_role.Text = row.Cells[3].Value.ToString();
-            adminAddUser_status.Text = row.Cells[4].Value.ToString();
-      
-        
-
-        string imagePath = row.Cells[5].Value.ToString();
-
-            if (!string.IsNullOrEmpty(imagePath))
+            try
             {
-                try
+                // Ensure the selected row index is valid
+                if (e.RowIndex >= 0)
                 {
-                    // Ensure the path is valid and absolute
-                    string fullImagePath = Path.Combine(@"C:\Users\Dell\Desktop\Project1\WindowsFormsApp1\WindowsFormsApp1\User_Directory", imagePath);
+                    // Retrieve the selected row
+                    DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
 
-                    // Check if the file exists before trying to load it
-                    if (File.Exists(fullImagePath))
+                    // Assign values from the selected row to your form fields
+                    id = (int)row.Cells[0].Value;
+                    adminAddUser_username.Text = row.Cells[1].Value.ToString();
+                    adminAddUser_password.Text = row.Cells[2].Value.ToString();
+                    adminAddUser_role.Text = row.Cells[3].Value.ToString();
+                    adminAddUser_status.Text = row.Cells[4].Value.ToString();
+
+                    // Retrieve the image path from the 'ProfileImage' column (e.g., 5th column in DataGridView)
+                    string imagePath = row.Cells[5].Value?.ToString();
+
+                    if (!string.IsNullOrEmpty(imagePath))
                     {
-                        adminAddUser_imageView.Image = Image.FromFile(fullImagePath);
+                        // Construct the full image path
+                        string fullImagePath = Path.Combine(
+                            @"C:\Users\Dell\Desktop\Project1\WindowsFormsApp1\WindowsFormsApp1\User_Directory",
+                            imagePath
+                        );
+
+                        // Check if the file exists
+                        if (File.Exists(fullImagePath))
+                        {
+                            adminAddUser_imageView.Image = Image.FromFile(fullImagePath);
+                        }
+                        else
+                        {
+                            // Use a placeholder image if the file doesn't exist
+                            string placeholderPath = @"C:\Users\Dell\Desktop\Project1\WindowsFormsApp1\WindowsFormsApp1\User_Directory\prashant.jpg";
+                            if (File.Exists(placeholderPath))
+                            {
+                                adminAddUser_imageView.Image = Image.FromFile(placeholderPath);
+                            }
+                            else
+                            {
+                                MessageBox.Show(
+                                    "Image file does not exist, and placeholder image is missing.",
+                                    "Image Error",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning
+                                );
+                                adminAddUser_imageView.Image = null;
+                            }
+                        }
                     }
                     else
                     {
-                        adminAddUser_imageView.Image = null; // Optionally, show a default image
+                        // Display placeholder for null or empty image paths
+                        string placeholderPath = @"C:\Users\Dell\Desktop\Project1\WindowsFormsApp1\WindowsFormsApp1\placeholder.jpg";
+                        if (File.Exists(placeholderPath))
+                        {
+                            adminAddUser_imageView.Image = Image.FromFile(placeholderPath);
+                        }
+                        else
+                        {
+                            adminAddUser_imageView.Image = null;
+                        }
                     }
                 }
-                catch (Exception ex)
-                {
-                    // Log or display an error message if there is an issue loading the image
-                    MessageBox.Show("Error loading image: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
-            else
+            catch (Exception ex)
             {
-                adminAddUser_imageView.Image = null; // Optionally, show a default image
+                // Display an error message for unexpected issues
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
-    
 
         // Purpose: To update user data in the database.
         private void addUserdata_updatebtn_Click(object sender, EventArgs e)

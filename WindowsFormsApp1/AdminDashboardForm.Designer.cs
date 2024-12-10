@@ -30,16 +30,16 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dashboard_TC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dashboard_TCus = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.dashboard_TI = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.dashboard_TInc = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -66,7 +66,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.dashboard_TC);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Location = new System.Drawing.Point(4, 16);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
@@ -75,17 +75,17 @@
             this.panel5.TabIndex = 6;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // label2
+            // dashboard_TC
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(280, 128);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "0";
+            this.dashboard_TC.AutoSize = true;
+            this.dashboard_TC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_TC.ForeColor = System.Drawing.Color.White;
+            this.dashboard_TC.Location = new System.Drawing.Point(280, 128);
+            this.dashboard_TC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dashboard_TC.Name = "dashboard_TC";
+            this.dashboard_TC.Size = new System.Drawing.Size(24, 25);
+            this.dashboard_TC.TabIndex = 2;
+            this.dashboard_TC.Text = "0";
             // 
             // label1
             // 
@@ -102,7 +102,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.dashboard_TCus);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(333, 16);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
@@ -111,17 +111,17 @@
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // label3
+            // dashboard_TCus
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(255, 128);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "0";
+            this.dashboard_TCus.AutoSize = true;
+            this.dashboard_TCus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_TCus.ForeColor = System.Drawing.Color.White;
+            this.dashboard_TCus.Location = new System.Drawing.Point(255, 128);
+            this.dashboard_TCus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dashboard_TCus.Name = "dashboard_TCus";
+            this.dashboard_TCus.Size = new System.Drawing.Size(24, 25);
+            this.dashboard_TCus.TabIndex = 4;
+            this.dashboard_TCus.Text = "0";
             // 
             // label4
             // 
@@ -139,7 +139,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.dashboard_TI);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(641, 16);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
@@ -147,17 +147,17 @@
             this.panel3.Size = new System.Drawing.Size(321, 177);
             this.panel3.TabIndex = 4;
             // 
-            // label5
+            // dashboard_TI
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(263, 128);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 25);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "$0.0";
+            this.dashboard_TI.AutoSize = true;
+            this.dashboard_TI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_TI.ForeColor = System.Drawing.Color.White;
+            this.dashboard_TI.Location = new System.Drawing.Point(214, 139);
+            this.dashboard_TI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dashboard_TI.Name = "dashboard_TI";
+            this.dashboard_TI.Size = new System.Drawing.Size(54, 25);
+            this.dashboard_TI.TabIndex = 6;
+            this.dashboard_TI.Text = "$0.0";
             // 
             // label6
             // 
@@ -174,7 +174,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.dashboard_TInc);
             this.panel6.Controls.Add(this.label8);
             this.panel6.Location = new System.Drawing.Point(971, 16);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
@@ -182,17 +182,17 @@
             this.panel6.Size = new System.Drawing.Size(321, 177);
             this.panel6.TabIndex = 3;
             // 
-            // label7
+            // dashboard_TInc
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(277, 128);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(24, 25);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "0";
+            this.dashboard_TInc.AutoSize = true;
+            this.dashboard_TInc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_TInc.ForeColor = System.Drawing.Color.White;
+            this.dashboard_TInc.Location = new System.Drawing.Point(216, 128);
+            this.dashboard_TInc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dashboard_TInc.Name = "dashboard_TInc";
+            this.dashboard_TInc.Size = new System.Drawing.Size(24, 25);
+            this.dashboard_TInc.TabIndex = 8;
+            this.dashboard_TInc.Text = "0";
             // 
             // label8
             // 
@@ -248,13 +248,13 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label dashboard_TC;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label dashboard_TCus;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label dashboard_TI;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label dashboard_TInc;
         private System.Windows.Forms.Label label8;
     }
 }

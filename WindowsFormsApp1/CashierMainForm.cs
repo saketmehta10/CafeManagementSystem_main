@@ -108,7 +108,11 @@ namespace WindowsFormsApp1
             adminAddProducts1.Visible = false;
             cashierOrderForm1.Visible = false;
             cashierCustomersForm1.Visible = false;
-
+            AdminDashboardForm adForm= adminDashboardForm1 as  AdminDashboardForm;
+            if (adForm != null)
+            {
+                adForm.refreshData();
+            }
 
         }
 
