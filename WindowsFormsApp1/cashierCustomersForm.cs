@@ -18,6 +18,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
 
             displayCustomersData();
+            refreshData();
         }
 
         public void refreshData()
@@ -38,6 +39,7 @@ namespace WindowsFormsApp1
             List<CustomersData> listData = cData.allCustomersData();
 
             datagridView1.DataSource = listData;
+           
         }
 
 

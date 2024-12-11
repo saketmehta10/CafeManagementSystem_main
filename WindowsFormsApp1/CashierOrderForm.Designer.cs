@@ -383,6 +383,7 @@
             this.cashierOrderForm_orderTable.RowHeadersWidth = 51;
             this.cashierOrderForm_orderTable.Size = new System.Drawing.Size(337, 326);
             this.cashierOrderForm_orderTable.TabIndex = 3;
+            this.cashierOrderForm_orderTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cashierOrderForm_orderTable_CellContentClick);
             // 
             // label10
             // 

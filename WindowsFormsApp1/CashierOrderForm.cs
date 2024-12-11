@@ -566,7 +566,6 @@ namespace WindowsFormsApp1
         private int getOrderID = 0;
         private void cashierOrderForm_removeBtn_Click(object sender, EventArgs e)
         {
-
             if (getOrderID == 0)
             {
                 MessageBox.Show("Select item first", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -576,17 +575,16 @@ namespace WindowsFormsApp1
                 if (MessageBox.Show("Are you sure you want to Remove the Order ID: " + getOrderID + "?", "Confirmation Message"
                 , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    using (SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=""New Database"";Integrated Security=True;"))
-                    {
-                        if (conn.State == ConnectionState.Closed)
+                    using (SqlConnection connect = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=""New Database"";Integrated Security=True;"))
+                    {  if (connect.State == ConnectionState.Closed)
                         {
                             try
                             {
-                                conn.Open();
+                                connect.Open();
 
-                                string deleteData = "DELETE FROM orders WHERE id = @id";
+                                string deleteData = "DELETE FROM orders WHERE order_id = @id";
 
-                                using (SqlCommand cmd = new SqlCommand(deleteData, conn))
+                                using (SqlCommand cmd = new SqlCommand(deleteData, connect))
                                 {
                                     cmd.Parameters.AddWithValue("@id", getOrderID);
 
@@ -601,23 +599,45 @@ namespace WindowsFormsApp1
                             }
                             finally
                             {
-                                conn.Close();
+                                connect.Close();
                             }
                         }
-                    }
+                        }
                 }
-
-                displayAllOrders();
-                displayTotalPrice();
-
             }
+
+            displayAllOrders();
+            displayTotalPrice();
         }
+
+
+
+
+
+
 
         private void cashierOrderForm_clearBtn_Click(object sender, EventArgs e)
         {
             displayAllOrders();
             displayTotalPrice();
             clearFields();
+
+        }
+
+        private void cashierOrderForm_orderTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = cashierOrderForm_menuTable.Rows[e.RowIndex];
+
+            // Check if the cell value is not null before casting
+            if (row.Cells[0].Value != null)
+            {
+                getOrderID = (int)row.Cells[0].Value;
+            }
+            else
+            {
+                MessageBox.Show("Order ID not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
     }
